@@ -1,0 +1,27 @@
+create database multisource;
+use multisource;
+create table node(nodename varchar(100),status varchar(100));
+create table hub(hubname varchar(100),position varchar(100));
+insert into node values('n1','c');
+insert into node values('n2','c');
+insert into node values('n3','c');
+insert into node values('n4','c');
+insert into node values('n5','c');
+
+insert into hub values('h1','n1');
+
+desc node;
+desc hub;
+commit;
+
+
+
+
+ 
+
+
+
+create table att(stat varchar(100),node varchar(100));
+insert into hub values('a','n1');
+commit;
+
